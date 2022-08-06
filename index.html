@@ -5,35 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="Stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="top-nav">
+    <img class="logo" src="images/logo.svg">
+    <div class="features-dd">
+      <button class="features-btn">Features 
+        <img src="images/icon-arrow-up.svg"class="arrow-icon" id="arrow-icon" alt="">
+      </button>
+      <div class="features-content">
+          <a class="features-link"href="#">
+            <img class="list-img" src="images/icon-todo.svg">  Todo List</a>
+          <a class="features-link" href="#">
+            <img class="list-img" src="images/icon-calendar.svg">  Calender</a>
+          <a class="features-link" href="#">
+            <img class="list-img" src="images/icon-reminders.svg">  Reminders</a>
+          <a class="features-link" href="#">
+            <img class="list-img" src="images/icon-planning.svg">  Planning</a>
+      </div> 
+    </div>
+    <div class="company-dd">
+      <button class="company-btn">Company 
+        <img class="arrow-icon" id="arrow-icon" src="images/icon-arrow-up.svg" alt="">
+      </button>
+      <div class="company-content">
+          <a href="#" class="company-links">History</a><br>
+          <a href="#" class="company-links">Our Team</a><br>
+          <a href="#" class="company-links">Blog</a>
+      </div> 
+    </div>
+    <div class="company-dd">
+      <button class="company-btn">Careers </button>
+    </div>
+    <div class="company-dd">
+      <button class="company-btn">About </button>
+    </div>
+    <div class="sub-content">
+        <button class="log-btn">Login</button>
+        <button class="reg-btn">Register</button>
+    </div>
   </div>
+  <div class="main-content-container">
+    <div class="main-header">
+      <h1 class="header-child">Make remote work</h1>
+    </div>
+    <div class="main-body">
+      <p class="main-p">Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+      <button class="lm-btn">Learn More</button>
+      <br>
+      <img src="images/client-databiz.svg" alt="" class="img-footer">
+      <img src="images/client-audiophile.svg" alt="" class="img-footer">
+      <img src="images/client-meet.svg" alt="" class="img-footer">
+      <img src="images/client-maker.svg" alt="" class="img-footer">
+    </div>
+    <div class="img-container">
+      <img src="images/image-hero-desktop.png" alt="hero Image" class="main-img">
+    </div>
+  </div> 
 </body>
 </html>

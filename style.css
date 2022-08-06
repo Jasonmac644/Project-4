@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+@media screen (max-width:481px){
+    
+}
+
+
+:root{
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Epilogue',sans-serif;
+    background-color: var(--AlmostWhite);
+}
+body{
+    overflow: hidden;
+}
+.logo{
+    margin:1vh;
+    width: 15vh;
+}
+.main-content{
+    background-image: url("images/image-hero-desktop.png");
+}
+.top-nav{
+    display: flex;
+}
+
+.features-btn, .company-btn, .log-btn, .reg-btn{
+    border: none;
+    cursor: pointer;
+    margin: 2vh 2vh 2vh 2vh;
+}
+
+.features-btn:hover, .company-btn:hover{
+    font-weight: bold;
+}
+.log-btn, .reg-btn{
+    border: 1.5px solid transparent;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+.log-btn:hover, .reg-btn:hover{
+    border: 1.5px solid var(--AlmostBlack);
+    border-radius: 15px;
+}
+
+.features-dd, .company-dd{
+    position: relative;
+    display: inline-block;
+}
+
+.features-link, .company-links{
+    color: black;
+    display: block;
+}
+
+.features-content, .company-content{
+    display:none;
+    position:absolute;
+    background-color: var(--AlmostWhite);
+    width: auto;
+    white-space: nowrap;
+    padding: 2.5vh;
+    color: var(--MediumGray);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.features-dd:hover .features-content, .company-dd:hover  .company-content{
+    display: block;
+    border-radius: 10px;
+}
+
+.features-link:hover, .company-links:hover{
+    background-color: none;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 10px;
+}
+.list-img{
+    margin-right: 1em;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.features-link{
+    padding: 0.5em;
+}
+
+.sub-content{
+    margin-left: auto;
+}
+
+
+.main-header{
+    font-size: 40px;
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+    width: 61%;
+    
+}
+
+.main-img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-container{
+    grid-area: image;
+    justify-self: center;
+}
+
+.main-body{
+    grid-area: mainContent;
+    font-size: 18px;
+    width: 61%;
+    justify-self:center;
+}
+
+.main-content-container{
+    margin: 5vh 10vh 5vh 15vh;
+    display: grid;
+    grid-template-columns: 50% 0% 50%;
+    grid-template-rows: 35% 30% 0;
+    grid-template-areas: 
+    'header . image' 
+    'mainContent . image';
+}
+
+.main-p{
+    color: var(--MediumGray);
+    font-weight: 500;
+    width: 85%;
+}
+
+.lm-btn{
+    cursor: pointer;
+    margin-top: 5vh;
+    padding: 1em 1.5em 1em 1.5em;
+    background-color: var(--AlmostBlack);
+    color: var(--AlmostWhite);
+    border-radius: 15px;
+}
+
+.img-footer{
+    margin-top: 10vh;
+    margin-right: 3vh;
+}
+
+.arrow-icon{
+    transition: 0.3s;
+}
+
+.features-dd:hover > .features-btn >  .arrow-icon, .company-dd:hover > .company-btn > .arrow-icon{
+    content: url(images/icon-arrow-down.svg);
+}
