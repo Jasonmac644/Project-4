@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
-@media screen (max-width:481px){
-    
-
-
 :root{
     --AlmostWhite: hsl(0, 0%, 98%);
     --MediumGray: hsl(0, 0%, 41%);
@@ -21,9 +17,7 @@ body{
     margin:1vh;
     width: 15vh;
 }
-.main-content{
-    background-image: url("images/image-hero-desktop.png");
-}
+
 .top-nav{
     display: flex;
 }
@@ -160,4 +154,9 @@ a:link{
 
 .features-dd:hover > .features-btn >  .arrow-icon, .company-dd:hover > .company-btn > .arrow-icon{
     content: url(images/icon-arrow-down.svg);
+}
+
+.lm-btn:hover{
+    background-color: var(--AlmostWhite);
+    color: var(--AlmostBlack);
 }
